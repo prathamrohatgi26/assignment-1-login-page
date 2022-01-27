@@ -28,8 +28,8 @@
             <div class = form>
                 <h3><em>Join Our Developers Community</em></h3>
 
-                <form >
-        <input type="text" name="yourName" placeholder="Full Name" required /><br />
+                <form method="GET" action="welcome.html">
+        <input type="text" name="yourName" id="full_name" placeholder="Full Name" required /><br />
 
         <input type="email" name="yourEmail" placeholder="EMAIL: me@example.com" required /><br />
 
@@ -38,7 +38,8 @@
         
         <input type="date" placeholder="Date Of Birth"></input><br />
 
-        <button type="submit" value="submit" class="btn btn-lg btn-primary"><a class="btn-a" href="/welcome.html"> Join</a> </button>
+        <button type="submit" id="submit" onclick="getData()" class="btn btn-lg btn-primary"> Join </button>
+                   
       </form>
         </div>
         <div class="image-section">
@@ -46,5 +47,9 @@
 
         </div>
         </section>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="login.js" charset="utf-8"></script>
+        
+        
   </body>
 </html>
